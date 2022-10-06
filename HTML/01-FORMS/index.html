@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <form action="#" method="get(default:append value in URL)/post" autocomplete="on" target="_self">    -->
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname" placeholder="Enter first name" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname" placeholder="Enter first name"><br>
+        <input type="submit" value="Submit">
+        <input type="reset"> 
+    </form>
+
+    <!-- Radio buttons -->
+    <p>Choose your favorite Web language:</p>
+    
+    <form action="#">
+        <input type="radio" name="fav_lang" id="html" value="HTML">
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" name="fav_lang" id="css" value="CSS">
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" name="fav_lang" id="js" value="JS">
+        <label for="js">JAVASCRIPT</label>
+    </form>
+
+
+    <!-- Checkbox -->
+    <p>Choose your mode of transportations:</p>
+
+    <form action="#">
+        <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label>
+        <br>
+        <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label>
+        <br>
+        <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat"> 
+        <label for="vehicle3">I have a boat</label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- || FORM ELEMENTS -->
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" size="3" multiple> 
+        <option value="">--Select a Cars--</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+    </select> 
+    
+    <label for="message">Give your valuable Feedback:</label>
+    <br>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+    <button type="button" onclick="alert('Hello World')">Click Me</button>
+
+    <form action="">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Vivek"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Singh"><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <!-- The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+     -->
+     <form action="">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+     </form>
+
+
+     <form>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+      </form>
+
+      <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+      </form>
+      <form>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+      </form>
+
+      <form>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+      </form>
+
+      <form>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+      </form>
+
+      <form>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+      </form>
+
+      <form>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+      </form>
+
+      
+
+</body>
+</html>

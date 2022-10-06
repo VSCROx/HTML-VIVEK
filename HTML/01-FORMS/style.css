@@ -1,0 +1,17 @@
+label[for="fname"]{
+    color: #fff;
+    background-color: #333;
+}
+
+input[type="text"]{
+    background-color: aqua;
+}
+
+input#lname{
+    background-color: chartreuse;
+}
+
+input[type="radio"] {
+    accent-color: red;
+}
+
